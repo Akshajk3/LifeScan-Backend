@@ -3,10 +3,11 @@ import pathlib
 
 # Define paths
 output_path = pathlib.Path("point_cloud")
-image_dir = pathlib.Path("generated_images")
+image_dir = pathlib.Path("images")
 
 # Create necessary directories
 output_path.mkdir(parents=True, exist_ok=True)
+image_dir.mkdir(parents=True, exist_ok=True)
 database_path = output_path / "database.db"
 
 # Extract features and match them
